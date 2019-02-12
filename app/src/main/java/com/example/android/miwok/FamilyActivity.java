@@ -44,6 +44,10 @@ public class FamilyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+        if(getActionBar() != null){
+            getActionBar().setTitle(R.string.category_family);
+        }
+
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
 

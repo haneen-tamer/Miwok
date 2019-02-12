@@ -43,6 +43,10 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+        if(getActionBar() != null){
+            getActionBar().setTitle(R.string.category_numbers);
+        }
+
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
 
